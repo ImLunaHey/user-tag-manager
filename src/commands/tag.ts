@@ -116,6 +116,8 @@ export class TagCommands {
         try {
             await member.setNickname(nickname);
         } catch (error: unknown) {
+            logger.error(error as string);
+
             // Tell the user the error
             return interaction.reply({
                 content: `${error as string}`,
