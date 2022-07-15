@@ -38,7 +38,8 @@ jobs:
             # Generate full .env
             sort -u -t '=' -k 1,1 .secrets.env .template.env | grep -Ev '(#.*$)|(^$)' > .env
             # Load the env.sh
-            if [ -f ./.scripts/env.sh ] then
+            if [ -f ./.scripts/env.sh ]
+            then
               source ./.scripts/env.sh
             fi
             # Reload services
