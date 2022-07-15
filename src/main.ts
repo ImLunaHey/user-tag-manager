@@ -4,7 +4,7 @@ import { logger } from './common/logger.js';
 import { createDiscordClient } from './common/discord-client.js';
 import { environment, botToken } from './common/config.js';
 import { Intents } from 'discord.js';
-import { name } from '../package.json';
+import { name } from '../package.json' assert { type: 'json' };
 
 const main = async () => {
   logger.info('Starting "%s" in "%s" mode.', name, environment);
