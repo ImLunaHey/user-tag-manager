@@ -1,0 +1,34 @@
+{
+  "name": "user-tag-manager",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec node --loader ts-node/esm/transpile-only src/main.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImLunaHey/user-tag-manager.git"
+  },
+  "keywords": [],
+  "author": "ImLunaHey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ImLunaHey/user-tag-manager/issues"
+  },
+  "homepage": "https://github.com/ImLunaHey/user-tag-manager#readme",
+  "dependencies": {
+    "@discordx/importer": "^1.1.10",
+    "chalk": "^5.0.1",
+    "discord.js": "^13.8.1",
+    "discordx": "^9.8.0",
+    "dotenv": "^16.0.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "typescript": "^4.7.4"
+  }
+}
